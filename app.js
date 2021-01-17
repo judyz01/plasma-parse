@@ -51,7 +51,7 @@ app.post("/upload", (req, res) => {
         //   if (err) return console.log(err);
         // });
         const myConsole = new console.Console(fs.createWriteStream('./output.txt'));
-        myConsole.log('hello world');
+        myConsole.log(text);
         console.log('Generate PDF: tesseract-ocr-result.txt');
         await worker.terminate();
         
