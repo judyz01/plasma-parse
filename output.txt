@@ -5,7 +5,8 @@ Final Patient Report
 
 Subject Information
 
-Subject ID: CV19_10 State Generated nCoV ID (PUI ID): OH1345627890  Name: Carina Smyth
+Subject ID: CV19_10 State Generated nCoV ID (PUI ID): OH1345627890 Name: Carina Smyth
+
 Age: 20 COVID-19 Suspected: Yes Disease Onset: 01 Apr, 2020
 Country:  USA Gender: Female Doctor's Name:
 
@@ -15,7 +16,7 @@ Sample ID: BAL_10 Collection Time: 10 AM
 
 Repeat Sample: No Collection Date: 01 Apr, 2020
 
-Collection Site: Bemessville Hospital Collected By: Dr. Parmer Julie
+Collection Site: Bernessville Hospital Collected By: Dr. Parmer Julie
 Test Information: COVID-19/ RT-PCR
 
 TestID Test Name Method
@@ -24,19 +25,17 @@ RT-PCR_1 COVID-19 Qualitative RT-PCR rRT-PCR
 
 Analytes and Results: COVID-19/ RT-PCR
 
-Analyte Group
-COVID-19 Qual RT-PCRViIrRNA
+Analyte Group Analyte Name Observed Value Flag
+COVID-19 Qual RT-PCRVirRNA nCoV2 detected [
+ey <
 
-Analyte Name Observed Value Flag
-nCoV2detected  Positive
+Analysis Comments Remarks
+SARS-CoV-2 Present Coronavirus Patient ICU
 
 Other Information
 
 Suspected Agent
 SARS-CoV-2
-
-Analysis Comments Remarks
-SARS-CoV-2 Present  Coronavirus Patient ICU
 
 DOB: 17 Apr, 2000
 Address: 1390 W. 5th Ave, Grandview, Ohio
