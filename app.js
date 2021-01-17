@@ -4,7 +4,7 @@ const app = express();
 const path = require("path");
 const fs = require("fs");
 const multer = require("multer");
-const { createWorker, createScheduler } = require('tesseract.js');
+const { createWorker } = require('tesseract.js');
 var log4js = require('log4js');
 
 const worker = createWorker();
@@ -50,9 +50,23 @@ app.post("/upload", (req, res) => {
         // fs.writeFile('tesseract-ocr-result.txt', `${ text.description }`, function(err) { 
         //   if (err) return console.log(err);
         // });
+      
         const myConsole = new console.Console(fs.createWriteStream('./output.txt'));
         myConsole.log(text);
         console.log('Generate PDF: tesseract-ocr-result.txt');
+
+        fs.readFile('./output.txt', function (err, text) {
+          if(text.toString().toLowerCase().includes('positive')){
+            console.log("YESS")
+          }
+          else if (text.toString().toLowerCase().includes('negative')) {
+            console.log("no");
+          }
+          else {
+            console.log("neither");
+          }
+        });
+
         await worker.terminate();
         
         return text
@@ -65,6 +79,6 @@ app.post("/upload", (req, res) => {
 
 
 // Start up our server
-const PORT= 5000 || process.env.PORT;
+const PORT= 3002 || process.env.PORT;
 app.listen(PORT, () => console.log(`Hey I'm running on port ${PORT}`));
 
